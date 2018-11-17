@@ -5,7 +5,6 @@ const express = require('express')
 const bodyParser = require('body-parser');
 const helmet = require('helmet')
 const morgan = require('morgan');  // HTTP request logging middlewear.
-const winston = require('winston');
 const logger = require('./logger');
 
 const routes = require('./routes');
@@ -34,7 +33,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // API calls
-app.use('/', routes);
+app.use('/api', routes);
 
 
 if (process.env.NODE_ENV === 'production') {
