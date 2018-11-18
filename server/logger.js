@@ -1,5 +1,3 @@
-
-const winston = require('winston');
 const { createLogger, format, transports } = require('winston');
 
 const level = process.env.LOG_LEVEL || 'debug';
