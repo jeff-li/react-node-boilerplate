@@ -11,6 +11,6 @@ router.use(function timeLog (req, res, next) {
 
 router.get('/', userCtrl.getUsers)
 
-router.get('/:userId', userCtrl.getUserById)
+router.get('/:userId', userCtrl.getAllUserInfoById)
 
 module.exports = router
