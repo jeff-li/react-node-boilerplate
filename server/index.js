@@ -6,7 +6,6 @@ const bodyParser = require('body-parser');
 const helmet = require('helmet')
 const morgan = require('morgan');  // HTTP request logging middlewear.
 const logger = require('./logger');
-const db  = require('./db/knex');
 
 const routes = require('./routes');
 
